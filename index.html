@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogo da Divisão de Maçãs</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="game-container">
+    <h1>🍎 Jogo da Divisão Exata 🧺</h1>
+    <p class="instructions">
+      Divida todas as maçãs <strong>igualmente</strong> entre os cestos!
+    </p>
+
+    <div class="info-panel">
+      <div class="score-board">Pontuação: <span id="score">0</span></div>
+      <div id="status-message" class="message"></div>
+    </div>
+
+    <!-- Área de onde as maçãs saem -->
+    <div class="apples-area">
+      <h2>Maçãs na Árvore (<span id="apples-left">0</span> restantes)</h2>
+      <div id="tree" class="tree"></div>
+    </div>
+
+    <!-- Cestos onde o jogador coloca as maçãs -->
+    <div class="baskets-area">
+      <h2>Cestos (<span id="basket-count">0</span>)</h2>
+      <div id="baskets-container" class="baskets-container"></div>
+    </div>
+
+    <div class="actions">
+      <button id="check-btn" onclick="checkAnswer()">Verificar Divisão</button>
+      <button id="next-btn" onclick="nextLevel()" style="display: none;">Próxima Rodada ➡️</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
